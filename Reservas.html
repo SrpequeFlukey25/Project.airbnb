@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="Estilos/estilos.css">
+</head>
+<body onload="mostrarReservaciones()">
+    <header>Reservas</header>
+    <div class='contenedor'>
+        <div class='elemento'>
+            <ul id='reservaciones'>
+                <!--reservaciones con fecha de inicio y fin-->
+            </ul>
+        </div>
+    </div>
+    <div class="contenedor">
+        <div style='text-align: center;'>
+            <button style='cursor: pointer' onclick="agregarReservacion()">+</button>
+        </div>
+        <form id='forma'>
+            <input type="date" id='fechaInicio' placeholder="Fecha de llegada"/>
+            <input type="number" id="numPersonas" placeholder="Cuantas personas asistiran"/>
+            <input type='date' id='fechaFin' placeholder="Fecha de salida"/>
+        </form>
+    </div>
+    <script src='js/reservacion.js'></script> 
+    <script src='js/app.js'></script>
+</body>
+</html>

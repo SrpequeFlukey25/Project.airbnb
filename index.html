@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto AirBNB</title>
+    <link rel="stylesheet" href="Estilos/estilos.css">
+</head>
+<body onload=mostrarReservaciones()>
+    <header>
+        <img src="imagenes/header.jpeg" alt="header" width=""/>
+    </header>
+   
+    <section class="clima">
+        <iframe src="api.html" frameborder="0"></iframe>
+    </section>
+    <section>
+        <div class='contenedor'>
+            <div class='elemento'>
+                <ul id='reservaciones'>
+                    <!--reservaciones con fecha de inicio y fin-->
+                </ul>
+            </div>
+        </div>
+        <div class="contenedor">
+            
+        </div>
+    </section>
+    <section>
+        <div style='text-align: center;'>
+            <button style='cursor:default' onclick="agregarReservacion()">+</button color:#ECEEFC>
+        </div>
+        <form id='forma'>
+            <input type="date" id='fechaInicio' placeholder="Fecha de llegada"/>
+            <input type="number" id="numPersonas" placeholder="Cuantas personas asistiran"/>
+            <input type='date' id='fechaFin' placeholder="Fecha de salida"/>
+        </form>
+    </section>
+    <section>
+        <nav>
+            <div>
+            <a href="contacto.html">
+                <p class="boton"> contacto</p>
+            </a>
+        </div>
+        </nav>
+    </section>
+    <script src='js/reservacion.js'></script> 
+    <script src='js/app.js'></script>
+</body>
+</html>
